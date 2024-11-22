@@ -56,6 +56,9 @@ public class ArmourCreation implements ItemCreationStrategy
     public Item fromExisting(final Item original)
     {
         // Return a clone of original
+        if (!(original instanceof Armour)) {
+            throw new IllegalArgumentException("Expected an Armour instance");
+        }
         return original.clone();
     }
 }

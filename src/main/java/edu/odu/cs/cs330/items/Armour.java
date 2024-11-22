@@ -77,6 +77,7 @@ public class Armour extends Equippable implements Item
         Armour cpy = new Armour();
         cpy.setName(this.name);
         cpy.setMaterial(this.getMaterial());
+        cpy.setDurability(this.getDurability());
         cpy.setModifier(this.getModifier());
         cpy.setModifierLevel(this.getModifierLevel());
         cpy.setElement(this.getElement());

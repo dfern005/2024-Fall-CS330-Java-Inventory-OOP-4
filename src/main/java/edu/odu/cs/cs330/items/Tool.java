@@ -76,6 +76,7 @@ public class Tool extends Equippable implements Item {
 
         cpy.setName(this.name);
         cpy.setMaterial(this.getMaterial());
+        cpy.setDurability(this.getDurability());
         cpy.setModifier(this.getModifier());
         cpy.setModifierLevel(this.getModifierLevel());
         cpy.setSpeed(this.speed);

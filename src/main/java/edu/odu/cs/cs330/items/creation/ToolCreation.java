@@ -55,6 +55,9 @@ public class ToolCreation implements ItemCreationStrategy
     public Item fromExisting(final Item original)
     {
         // Return a clone of original
+        if (!(original instanceof Tool)) {
+            throw new IllegalArgumentException("Expected a Tool instance");
+        }
         return original.clone();
     }
 }
